@@ -1,0 +1,32 @@
+body {
+    font-family: "Century Gothic", arial;
+    color: #6658f0;
+    text-shadow: 2px 2px #8b5d34;
+    background-color: #8b81f2;
+}
+
+#checkpoint-text {
+    width: 400px;
+    display: block;
+    margin: 50px auto 50px auto;
+}
+
+#checkpoint-island {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+#about-me {
+    margin: auto;
+    text-align: center;
+    width: 55%;
+}
+
+#spotify-frame {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}

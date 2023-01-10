@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Checkpoint Music</title>
+    
+</head>
+<body>
+    <script>
+        let checkpointVids = [
+            {color : '#8b81f2', text : 'Assets/checkpointTextPurple.png', video : 'Assets/AAIslandVid_VP9.webm', fontColor : "#6658f0"}, 
+            {color : '#ec6272', text : 'Assets/checkpointTextPink.png', video : 'Assets/EIslandVid_VP9.webm', fontColor : "#ed8893"}, 
+            {color : '#4eb565', text : 'Assets/checkpointTextGreen.png', video : 'Assets/AFIslandVid_VP9.webm', fontColor : "#34964a"}, 
+            {color : '#5f79ed', text : 'Assets/checkpointTextBlue.png', video : 'Assets/RFIslandVid_VP9.webm', fontColor : "#7c90e7"}, 
+            {color : '#6cb0d1', text : 'Assets/checkpointTextLtBlue.png', video : 'Assets/BSIslandVid_VP9.webm', fontColor : "#288cbd"},
+            {color : '#e1ab5b', text : 'Assets/checkpointTextYellow.png', video : 'Assets/DSIslandVid_VP9.webm', fontColor : "#f1c84d"}
+        ];
+        window.addEventListener('load', () => {
+            let num = Math.floor(Math.random() * 6);
+            document.body.style.backgroundColor = checkpointVids[num].color;
+            document.body.style.color = checkpointVids[num].fontColor;
+            document.getElementById("checkpoint-text").src = checkpointVids[num].text;
+            document.getElementById("checkpoint-island").src = checkpointVids[num].video;
+        });
+    </script>
+    <img id="checkpoint-text" src="Assets/checkpointTextPurple.png" />
+    <video id="checkpoint-island" src="Assets/AAIslandVid_VP9.web" autoplay loop muted></video>
+    <div id="about-me">
+        <h1>hi, i'm sam and i want to make music for video games.</h1>
+    </div>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0ChqHQDUwXWdJZVIc7ZXjq?utm_source=generator&theme=0" 
+            id="spotify-frame" width="80%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</body>
+</html>
