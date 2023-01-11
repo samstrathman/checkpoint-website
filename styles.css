@@ -1,8 +1,26 @@
 body {
     font-family: "Century Gothic", arial;
     color: #6658f0;
-    text-shadow: 2px 2px #8b5d34;
+    text-shadow: 1px 1px #8b5d34;
     background-color: #8b81f2;
+}
+
+h1 {
+    text-shadow: -1px 1px #8b5d34;
+}
+
+.navbar {
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+
+.navbar a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #6658f0;
 }
 
 #checkpoint-text {
@@ -32,6 +50,6 @@ video {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
-    max-width: 300px;
+    max-width: 365px;
 }
+

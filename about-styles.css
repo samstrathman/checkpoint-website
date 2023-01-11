@@ -1,0 +1,40 @@
+body {
+    font-family: "Century Gothic", arial;
+    color: #6658f0;
+    text-shadow: 1px 1px #8b5d34;
+    background-color: #ADD8E6;
+}
+
+.navbar {
+    width: 100%;
+    background-color:transparent;
+    display: flex;
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+
+.navbar a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #6658f0;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-desc h1{
+    font-size: 3em;
+    width: 80%;
+}
+
+.about-desc p{
+    font-size: 1.5em;
+}
+
+#about-img {
+    width: 250px;
+    border-radius: 50%;
+}

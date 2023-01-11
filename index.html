@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="Assets/checkpointLogo.png" height="16" width="16">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <title>Checkpoint Music</title>
 </head>
 <body>
+    <div class="navbar">
+        <a href="contact.html">contact</a>
+        <a href="about.html">about</a>
+    </div>
     <script>
         /*
         function preloadFunc()
@@ -29,18 +34,17 @@
             document.getElementById("checkpoint-island").src = checkpointVids[num].video;
         });
         }
-        window.onpaint = preloadFunc();
+        window.onpaint = preloadFunc(); 
         */
     </script>
     <img id="checkpoint-text" />
     <div class="video-wrapper">
         <video id="checkpoint-island" autoplay muted loop>
-            <source src="Assets/AAIslandVid_HVEC.mov" />
-            <source src="Assets/AAIslandVid_VP9.webm" />   
+            <source src="Assets/AAIslandVid.mp4" />   
         </video>
     </div>
     <div id="about-me">
-        <h1>hi, i'm sam and i want to make music for video games.</h1>
+        <h1>listen to the music:</h1>
     </div>
     <iframe id="spotify-frame" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0ChqHQDUwXWdJZVIc7ZXjq?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </body>
