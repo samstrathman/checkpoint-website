@@ -22,6 +22,10 @@ h1 {
     color: #6658f0;
 }
 
+.img-wrapper {
+    height: 64px;
+}
+
 #checkpoint-text {
     width: 350px;
     display: block;
@@ -32,6 +36,7 @@ h1 {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    height: 500px;
 }
   
 video {
