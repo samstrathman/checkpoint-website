@@ -1,29 +1,27 @@
 body {
     font-family: "Century Gothic", arial;
-    color: #6658f0;
-    text-shadow: 1px 1px #8b5d34;
-}
-
-h1 {
-    text-shadow: -1px 1px #8b5d34;
+    color: white;
+    text-shadow: -1px -1px #8b5d34;
 }
 
 .navbar {
     width: 100%;
-    background-color:transparent;
     display: flex;
     gap: 30px;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    font-size: clamp(.7rem, 2.5vw, 1rem); 
 }
 
 .navbar a{
     font-size: 1.5em;
     text-decoration: none;
-    color: #6658f0;
+    color: white;
 }
 
 .img-wrapper {
     height: 64px;
+    margin: auto;
 }
 
 #checkpoint-text {
@@ -36,18 +34,20 @@ h1 {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    height: 500px;
+    margin-top: -33px;
+    margin-bottom: -20px;
 }
   
-video {
-    object-fit: cover;
-    width: clamp(700px, 150%, 1200px);
+#checkpoint-island {
+    width: 100%; 
+    height: 100%;
+    width: clamp(700px, 150%, 1100px);
 }
 
 #listen {
-    margin: auto;
+
+    margin: -10px;
     text-align: center;
-    width: 55%;
 }
 
 #spotify-frame {
@@ -56,4 +56,3 @@ video {
     margin-right: auto;
     max-width: 365px;
 }
-
