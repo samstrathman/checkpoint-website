@@ -30,16 +30,17 @@
             document.getElementById("checkpoint-text").src = checkpointVids[num].text;
             document.getElementById("webmVid").src = checkpointVids[num].videoWebm;
             document.getElementById("movVid").src = checkpointVids[num].videoMov;
+            let video = document.getElementById("checkpoint-island").load();
         });      
     </script>
     <img id="checkpoint-text" />
     <div class="video-wrapper">
         <video preload="metadata" id="checkpoint-island" autoplay muted loop playsinline>
-            <source id="movVid" src="Assets/AAIsland_HEVC.mov" type="video/quicktime"/>
-            <source id="webmVid" src="Assets/AAIsland_VP9.webm" type="video/webm"/>
+            <source id="movVid" src="" type="video/quicktime"/>
+            <source id="webmVid" src="" type="video/webm"/>
         </video>
     </div>
-    <div id="about-me">
+    <div id="listen">
         <h1>listen to the music:</h1>
     </div>
     <iframe id="spotify-frame" style="border-radius:12px" src="https://open.spotify.com/embed/artist/0ChqHQDUwXWdJZVIc7ZXjq?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>

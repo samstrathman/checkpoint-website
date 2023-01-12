@@ -2,7 +2,6 @@ body {
     font-family: "Century Gothic", arial;
     color: #6658f0;
     text-shadow: 1px 1px #8b5d34;
-    background-color: #8b81f2;
 }
 
 h1 {
@@ -40,7 +39,7 @@ video {
     width: clamp(700px, 150%, 1200px);
 }
 
-#about-me {
+#listen {
     margin: auto;
     text-align: center;
     width: 55%;
