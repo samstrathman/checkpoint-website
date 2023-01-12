@@ -7,48 +7,26 @@
         <link rel="stylesheet" href="contact-styles.css">
         <link rel="icon" href="Assets/checkpointLogo.png" height="16" width="16">
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-        <title>Checkpoint Music</title>
+        <title>Checkpoint Contact</title>
     </head>
     <body>
         <div class="navbar">
+            <a href="https://www.tiktok.com/@samstrathman" target="_blank">tiktok</a>
+            <a href="https://www.instagram.com/samstrathman/" target="_blank">instagram</a>
             <a href="about.html">about</a>
             <a href="index.html">home</a>
         </div>
-        <div class="about">
-            <div class="form-wrap">
-                <h1>Want to work with me? Send me a message!</h1>
-                <form id="survey-form">
-                    <fieldset>
-                      <label for="name" id="name-label">Name: <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
-                      <label for="email" id="email-label">Email: <input id="email" name="email" type="email" placeholder="Enter your email" required /></label>
-                      <label for="number" id="number-label">Age (optional): <input id="number" name="number" type="number" min="10" max="99" placeholder="Enter your age" /></label>
-                      <label for="dropdown">What Level Are You?
-                        <select required id="dropdown" name="dropdown">
-                          <option value="">(select one)</option>
-                          <option value="1">Newbie</option>
-                          <option value="2">Intermediate</option>
-                          <option value="3">Expert</option>
-                        </select>
-                      </label>
-                      <div class="separator"></div>
-                      <p>Would you recommend us?</p>
-                      <label for="recommendation-yes"><input id="recommendation-yes" type="radio" name="recommendation" class="inline" value="recommendation-yes"/> Absolutely!</label>
-                      <label for="recommendation-no"><input id="recommendation-no" type="radio" name="recommendation" class="inline" value="recommendation-no"/> Nah.</label>
-                      <p>How did you feel about your experience?</p>
-                       <label for="feelings" name="feeling-good">
-                        <input id="feeling-good" type="checkbox" name="feeling-good" value="good"/> Good!</label>
-                        <label for="feelings" name="feeling-okay">
-                        <input id="feeling-okay" type="checkbox" name="feeling-okay" value="okay"/> Okay</label>
-                        <label for="feelings" name="feeling-bad">
-                        <input id="feeling-bad" type="checkbox" name="feeling-bad" value="bad"/> Bad.</label>
-                        <div class="separator"></div>
-                        <label for="comments">Any comments or suggestions?
-                        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I think there should be a..."></textarea>
-                      </label>
-                    </fieldset>
-                    <input type="submit" id="submit" value="Submit" />
-                  </form>  
-            </div>
+        <h1>Need music for your game or something? Send me a message!</h1>
+        <div class="form-wrap">
+            <form id="contact-form" netlify>
+              <div class="settings">
+                  <label for="name" id="name-label">Name: </label><input id="name" name="name" type="text" required />
+                  <label for="email" id="email-label">Email: </label><input id="email" name="email" type="email" required />
+                  <label for="subject" id="subject-label">Subject: </label><input id="subject" name="subject" type="text" required />
+                  <label for="message" id="message-label">Message: </label><textarea id="message" name="message"></textarea>
+                  <input type="submit" id="submit" value="Submit" />
+              </div>
+            </form>  
         </div>
     </body>
 </html>

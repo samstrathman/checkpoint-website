@@ -35,18 +35,16 @@ body {
     justify-content: center;
     overflow: hidden;
     margin-top: -33px;
-    margin-bottom: -20px;
+
 }
   
 #checkpoint-island {
     width: 100%; 
     height: 100%;
-    width: clamp(700px, 150%, 1100px);
+    width: clamp(900px, 150%, 1200px);
 }
 
 #listen {
-
-    margin: -10px;
     text-align: center;
 }
 

@@ -1,90 +1,81 @@
 body {
     font-family: "Century Gothic", arial;
-    color: #6658f0;
-    text-shadow: 1px 1px #8b5d34;
-    background-color: #ADD8E6;
+    color: #104a4a;
+    background-color: #c2c4c4;
 }
 
-  .navbar {
-    width: 100%;
-    background-color:transparent;
-    display: flex;
-    gap: 30px;
-    flex-direction: row-reverse;
+.navbar {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  font-size: clamp(.7rem, 2.5vw, 1rem); 
 }
 
 .navbar a{
     font-size: 1.5em;
     text-decoration: none;
-    color: #6658f0;
+    color: #104a4a;
 }
   
-  h1, #description {
-    text-align: center;
-  }
-  
-  h1, p {
-    color: white;
-  }
-  
-  p {
-    margin-bottom: 5px;
-  }
-  
-  #description {
-    font-style: italic;
-    margin-bottom: 15px;
-  }
-  
-  input {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  
-  label {
-    display: block;
-  }
-  
-  input[type="text"], input[type="email"], textarea {
-    width: 100%;
-  }
-  
-  input[type="number"] {
-    width: 32%;
-    margin: 5px 0 10px 0;
-  }
-  
-  fieldset {
-    color: white;
-    border: 4px solid #3b3b4f;
-    width: 350px;
-    margin: auto;
-  }
-  
-  textarea  {
-    margin-top: 7px;
-  }
-  
-  #submit {
-      display: block;
-      padding: 0.75rem;
-      background-color: inherit;
-      border: 4px solid #3b3b4f;
-      color: white;
-      cursor: pointer;
-      margin: 10px auto auto auto;
-  }
-  
-  .separator {
-    padding: 7px;
-    margin-bottom: 15px;
-    border-bottom: 3px solid #3b3b4f;
-  }
-  
-  select {
-    height: 23px;
-  }
-  
-  ::placeholder, select {
-    color: gray;
-  }
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 10px;
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  font-size: 1.25em;
+  margin-top: 7px;
+}
+
+#name, #email, #subject {
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+}
+
+#message-label {
+  margin-bottom: 10px;
+}
+
+#message {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+#submit {
+  grid-column: 2;
+  padding: 0.3rem;
+  border: 2px solid #104a4a;
+  border-radius: 4px;
+  background-color: inherit;
+  cursor: pointer;
+  color: #104a4a;
+  font-size: 1.5em;
+  width: 100%;
+}
+
+div.settings {
+  display:grid;
+  grid-template-columns: max-content max-content;
+  grid-gap:5px;
+}
+div.settings label       { text-align:right; }

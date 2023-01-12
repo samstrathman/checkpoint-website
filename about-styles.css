@@ -1,18 +1,18 @@
 body {
     font-family: "Century Gothic", arial;
-    color: #6658f0;
+    color: black;
     text-shadow: 1px 1px #8b5d34;
-    background-color: #ADD8E6;
+    background-color: #c2c4c4b8;
 }
 
 .navbar {
     width: 100%;
-    background-color:transparent;
     display: flex;
     gap: 30px;
     flex-direction: row-reverse;
+    justify-content: space-around;
+    font-size: clamp(.7rem, 2.5vw, 1rem); 
 }
-
 .navbar a{
     font-size: 1.5em;
     text-decoration: none;
