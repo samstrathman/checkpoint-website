@@ -21,13 +21,16 @@ body {
 
 .about {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    max-width: 80%;
+    justify-content: center;
+    margin: auto;
 }
 
 .about-desc h1{
     font-size: em;
-    width: 80%;
+    width: 100%;
+    text-align: center;
 }
 
 .about-desc p{
@@ -38,9 +41,13 @@ body {
     width: 250px;
     border-radius: 50%;
     border: 2px solid #104a4a;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
 }
 
 a {
     text-decoration:underline;
     color: #104a4a;
 }
+
