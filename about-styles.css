@@ -1,22 +1,22 @@
 body {
     font-family: "Century Gothic", arial;
-    color: black;
-    text-shadow: 1px 1px #8b5d34;
-    background-color: #c2c4c4b8;
+    color: #104a4a;
+    background-color: #c2c4c4;
 }
 
 .navbar {
-    width: 100%;
-    display: flex;
-    gap: 30px;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    font-size: clamp(.7rem, 2.5vw, 1rem); 
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  font-size: clamp(.7rem, 2.5vw, 1rem); 
 }
+
 .navbar a{
     font-size: 1.5em;
     text-decoration: none;
-    color: #6658f0;
+    color: #104a4a;
 }
 
 .about {
@@ -26,15 +26,21 @@ body {
 }
 
 .about-desc h1{
-    font-size: 3em;
+    font-size: em;
     width: 80%;
 }
 
 .about-desc p{
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 #about-img {
     width: 250px;
     border-radius: 50%;
+    border: 2px solid #104a4a;
+}
+
+a {
+    text-decoration:underline;
+    color: #104a4a;
 }
