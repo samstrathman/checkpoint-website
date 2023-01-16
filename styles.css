@@ -4,12 +4,19 @@ body {
     text-shadow: -1px -1px #8b5d34;
 }
 
+.flex-wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+}
+
 .navbar {
     width: 100%;
     display: flex;
     gap: 30px;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: clamp(.7rem, 2.5vw, 1rem); 
 }
 
@@ -21,13 +28,11 @@ body {
 
 .img-wrapper {
     height: 64px;
-    margin: auto;
+    margin: 30px auto 30px auto;
 }
 
 #checkpoint-text {
     width: 350px;
-    display: block;
-    margin: 30px auto 30px auto;
 }
 
 .video-wrapper {
@@ -35,7 +40,6 @@ body {
     justify-content: center;
     overflow: hidden;
     margin-top: -33px;
-
 }
   
 #checkpoint-island {
