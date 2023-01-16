@@ -9,8 +9,7 @@ body {
 .flex-wrap {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 90vh;
+    height: 95vh;
 }
 
 .navbar {

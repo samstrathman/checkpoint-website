@@ -10,7 +10,11 @@
     <title>checkpoint</title>
 </head>
 <body>
-    <script>    
+    <script>  
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
         let checkpointVids = [
             {color : '#8b81f2', text : 'Assets/checkpointTextPurple.png', videoWebm : 'Assets/AAIsland_VP9.webm', videoMov : 'Assets/AAIsland_HEVC.mov', fontColor : "#6658f0", spotifyFrame : "https://open.spotify.com/embed/artist/0ChqHQDUwXWdJZVIc7ZXjq?utm_source=generator&theme=0"}, 
             {color : '#ec6272', text : 'Assets/checkpointTextPink.png', videoWebm : 'Assets/EIsland_VP9.webm', videoMov : 'Assets/EIsland_HEVC.mov', fontColor : "#ed8893", spotifyFrame : "https://open.spotify.com/embed/track/4a8SQCvS8pydJ3hpauvm4v?utm_source=generator&theme=0"}, 
