@@ -2,13 +2,15 @@ body {
     font-family: "Century Gothic", arial;
     color: white;
     text-shadow: -1px -1px #8b5d34;
+
+    
 }
 
 .flex-wrap {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 90vh;
 }
 
 .navbar {
@@ -28,7 +30,7 @@ body {
 
 .img-wrapper {
     height: 64px;
-    margin: 30px auto 30px auto;
+    margin: 30px auto 30px ;
 }
 
 #checkpoint-text {
