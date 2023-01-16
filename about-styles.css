@@ -51,3 +51,8 @@ a {
     color: #104a4a;
 }
 
+.spacer {
+    border-bottom: 1px solid #104a4a;
+    width: 90%;
+    margin: auto;
+}
