@@ -1,9 +1,17 @@
+/* hidden and visible classes are used for the loading screen */
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+
 body {
     font-family: "Century Gothic", arial;
     color: white;
-    text-shadow: -1px -1px #8b5d34;
-
-    
+    text-shadow: -1px -1px #8b5d34;   
 }
 
 .flex-wrap {
