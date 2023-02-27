@@ -1,19 +1,61 @@
-/* hidden and visible classes are used for the loading screen */
-.visible {
-    display: block;
-}
-
-.hidden {
-    display: none;
-}
-
-
 body {
     font-family: "Century Gothic", arial;
     color: white;
-    text-shadow: -1px -1px #8b5d34;   
+    text-shadow: -1px -1px #8b5d34;  
+    position: relative; 
 }
 
+/* loading screen */
+#loader {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: calc(50% - (60px / 2));
+    left: calc(50% - (60px / 2)); 
+    border: 10px solid transparent;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-top: 10px solid white;
+    border-radius: 50%;
+    
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+  
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+  
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+}
+  
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+
+#site-wrapper {
+    display: none;
+}
+  
+
+/*Main website CSS*/
 .flex-wrap {
     display: flex;
     flex-direction: column;

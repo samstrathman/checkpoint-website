@@ -9,34 +9,37 @@
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <title>checkpoint</title>
 </head>
-<body>
+<body onload="loadAnimation()">
     <script src="index.js"></script>
-    <div class="flex-wrap">
-        <div class="navbar">
-            <a href="https://www.tiktok.com/@samstrathman" target="_blank">tiktok</a>
-            <a href="https://www.instagram.com/samstrathman/" target="_blank">instagram</a>
-            <a href="contact.html">contact</a>
-            <a href="about.html">about</a>
-        </div>
-    
-        <div class="img-wrapper">
-            <img id="checkpoint-text" />
-        </div>
-        <div class="video-wrapper">
-            <video width="1280" height="720" preload="metadata" id="checkpoint-island" autoplay muted loop playsinline>
-                <source id="movVid" src="" type="video/quicktime"/>
-                <source id="webmVid" src="" type="video/webm"/>
-            </video>
-        </div>
-        <div id="listen">
-            <h1>listen to the music:</h1>
-        </div>
-        <iframe id="spotify-frame" style="border-radius:12px" width="100%" height="80" frameBorder="0" 
-            allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-            loading="lazy">
-        </iframe>
-        <div id="listen">
-            <h2>(also on all other platforms)</h2>
+    <div id="loader"></div>
+    <div id="site-wrapper" class="animate-bottom">
+        <div class="flex-wrap">
+            <div class="navbar">
+                <a href="https://www.tiktok.com/@samstrathman" target="_blank">tiktok</a>
+                <a href="https://www.instagram.com/samstrathman/" target="_blank">instagram</a>
+                <a href="contact.html">contact</a>
+                <a href="about.html">about</a>
+            </div>
+        
+            <div class="img-wrapper">
+                <img id="checkpoint-text" />
+            </div>
+            <div class="video-wrapper">
+                <video width="1280" height="720" preload="metadata" id="checkpoint-island" autoplay muted loop playsinline>
+                    <source id="movVid" src="" type="video/quicktime"/>
+                    <source id="webmVid" src="" type="video/webm"/>
+                </video>
+            </div>
+            <div id="listen">
+                <h1>listen to the music:</h1>
+            </div>
+            <iframe id="spotify-frame" style="border-radius:12px" width="100%" height="80" frameBorder="0" 
+                allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                loading="lazy">
+            </iframe>
+            <div id="listen">
+                <h2>(also on all other platforms)</h2>
+            </div>
         </div>
     </div>
 </body>
